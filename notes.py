@@ -11,7 +11,7 @@ def moyenne(notes):
 def mention(note):
     """Mention obtenue pour une moyenne sur 20."""
     if note >= 16:
-        return "Très bien"
+        return "Excellent"
     if note >= 14:
         return "Bien"
     if note >= 12:

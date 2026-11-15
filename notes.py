@@ -19,3 +19,8 @@ def mention(note):
     if note >= 10:
         return "Passable"
     return "Ajourné"
+def meilleure_note(notes):
+    """Retourne la meilleure note de la liste."""
+    if not notes:
+        raise ValueError("La liste de notes est vide")
+    return max(notes)

@@ -1,6 +1,6 @@
 
 import pytest
-from notes import mention, moyenne
+from notes import mention, moyenne, meilleure_note
 
 
 def test_moyenne():
@@ -21,3 +21,7 @@ def test_moyenne_liste_vide():
 ])
 def test_mention(note, attendu):
     assert mention(note) == attendu
+def test_meilleure_note():
+    assert meilleure_note([10, 15, 18, 12]) == 18
+def test_meilleure_note():
+    assert meilleure_note([10, 15, 18, 12]) == 18
